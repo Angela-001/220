@@ -5,7 +5,7 @@ interest.py
 Problem: This function computes the monthly interest charge on a credit card account.
 
 Certification of Authenticity:
-I cerify that this assignment is my own work, but I discussed it with tutors at the CSL.
+I certify that this assignment is my own work, but I discussed it with tutors at the CSL.
 """
 
 def main():
