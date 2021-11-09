@@ -16,16 +16,16 @@ def cash_conversion():
 def encode():
     user_input = input("Type in a word here: ")
     key = eval(input("Type in a key here: "))
-    output = ""
-    for ch in user_input:
+    output = "" #it's an accumulaotr like having start = 0
+    for ch in user_input: #ch is any variable you want
         encode1 = chr(ord(ch) + key)
-        output = output + str(encode1)
-    print(output)
+        output = output + encode1
+        print(output)#if print ws in rhe loop, it would print it out each time you go through the loop
 
 
 def sphere_area(radius):
     area = 4*math.pi*(radius**2)
-    return(area)
+    return area#return goes back to wherever it was called from
 
 def sphere_volume(radius):
     volume = (4/3) * math.pi * (radius**3)
@@ -33,10 +33,10 @@ def sphere_volume(radius):
 
 
 def sum_n(n):
-    start = 0
+    start = 0#necessaty for accumulator values, or totals
     for i in range(n):
         start = start + i+1
-    return start
+    return start# if you have return inside the loop, it will only run through 1 time unlike print
 
 
 
